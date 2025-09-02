@@ -18,7 +18,7 @@ files_to_process <- c("DEGs_Data_1.csv" , "DEGs_Data_2.csv")
 result_list <- list()
 
 for (file_name in files_to_process) {
-  cat("\nProcessing:", file_name, "\n")  # fixed typo
+  cat("\nProcessing:", file_name, "\n") 
   input_file_path <- file.path(input_dir, file_name)
   
   data <- read.csv(input_file_path, header = TRUE)
@@ -47,4 +47,5 @@ for (file_name in files_to_process) {
 }
 
 save.image("Assignment2.RData")
+
 
